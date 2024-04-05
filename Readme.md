@@ -1,5 +1,8 @@
 # Api 문서화
 
+## 사용 방법
+git clone 후 npm i 실행
+
 ## 폴더 구조
 
 1. page/
