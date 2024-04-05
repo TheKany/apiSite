@@ -488,14 +488,16 @@ address {
   margin: 16px 0;
 }
 
-api-req p {
+p {
   display: block;
 }
-api-req ul,
-api-req li {
+
+ul,
+li {
   padding-left: 0;
 }
-api-req .apiReq-title {
+
+.apiReq-title {
   font-size: 24px;
   line-height: 34px;
   letter-spacing: -0.01em;
@@ -504,29 +506,30 @@ api-req .apiReq-title {
   font-style: normal;
   margin-bottom: 24px;
 }
-api-req .apiReq-container {
+
+.apiReq-container {
   border-top: 1px solid #a1a5b6;
   padding-bottom: 32px;
 }
-api-req .apiReq-container .apiReq__parameter {
+.apiReq-container .apiReq__parameter {
   display: flex;
   align-items: flex-end;
   margin: 8px 0;
   padding: 8px 0;
 }
-api-req .apiReq-container .apiReq__parameter.Body .apiReq__parameter-name {
+.apiReq-container .apiReq__parameter.Body .apiReq__parameter-name {
   color: #fff;
   padding: 8px;
   border-radius: 4px;
   background-color: rgb(236, 147, 147);
 }
-api-req .apiReq-container .apiReq__parameter.Query .apiReq__parameter-name {
+.apiReq-container .apiReq__parameter.Query .apiReq__parameter-name {
   color: #fff;
   padding: 8px;
   border-radius: 4px;
   background-color: rgb(197, 97, 197);
 }
-api-req .apiReq-container .apiReq__parameter .apiReq__parameter-name {
+.apiReq-container .apiReq__parameter .apiReq__parameter-name {
   width: 90px;
   text-align: center;
   font-size: 18px;
@@ -536,7 +539,7 @@ api-req .apiReq-container .apiReq__parameter .apiReq__parameter-name {
   font-optical-sizing: auto;
   font-style: normal;
 }
-api-req .apiReq-container .apiReq__parameter .apiReq__parameter-text {
+.apiReq-container .apiReq__parameter .apiReq__parameter-text {
   font-size: 16px;
   line-height: 24px;
   letter-spacing: -0.01em;
@@ -545,7 +548,7 @@ api-req .apiReq-container .apiReq__parameter .apiReq__parameter-text {
   font-style: normal;
   margin-left: 8px;
 }
-api-req .apiReq-container .apiReq__parameter-list .apiReq__parameter-listItem {
+.apiReq-container .apiReq__parameter-list .apiReq__parameter-listItem {
   border: 1px solid #bcc0cf;
   border-radius: 4px;
   margin: 4px 0;
@@ -553,7 +556,7 @@ api-req .apiReq-container .apiReq__parameter-list .apiReq__parameter-listItem {
   display: grid;
   grid-template-columns: repeat(10, 1fr);
 }
-api-req .apiReq-container .apiReq__parameter-list .apiReq__parameter-listItem .parameter-name {
+.apiReq-container .apiReq__parameter-list .apiReq__parameter-listItem .parameter-name {
   font-size: 14px;
   line-height: 24px;
   letter-spacing: -0.01em;
@@ -564,7 +567,7 @@ api-req .apiReq-container .apiReq__parameter-list .apiReq__parameter-listItem .p
   display: flex;
   align-items: center;
 }
-api-req .apiReq-container .apiReq__parameter-list .apiReq__parameter-listItem .parameter-name.th {
+.apiReq-container .apiReq__parameter-list .apiReq__parameter-listItem .parameter-name.th {
   font-size: 16px;
   line-height: 24px;
   letter-spacing: -0.01em;
@@ -574,7 +577,7 @@ api-req .apiReq-container .apiReq__parameter-list .apiReq__parameter-listItem .p
   padding: 0;
   justify-content: center;
 }
-api-req .apiReq-container .apiReq__parameter-list .apiReq__parameter-listItem .parameter-type {
+.apiReq-container .apiReq__parameter-list .apiReq__parameter-listItem .parameter-type {
   font-size: 14px;
   line-height: 24px;
   letter-spacing: -0.01em;
@@ -585,7 +588,7 @@ api-req .apiReq-container .apiReq__parameter-list .apiReq__parameter-listItem .p
   display: flex;
   align-items: center;
 }
-api-req .apiReq-container .apiReq__parameter-list .apiReq__parameter-listItem .parameter-type.th {
+.apiReq-container .apiReq__parameter-list .apiReq__parameter-listItem .parameter-type.th {
   font-size: 16px;
   line-height: 24px;
   letter-spacing: -0.01em;
@@ -595,7 +598,7 @@ api-req .apiReq-container .apiReq__parameter-list .apiReq__parameter-listItem .p
   padding: 0;
   justify-content: center;
 }
-api-req .apiReq-container .apiReq__parameter-list .apiReq__parameter-listItem .parameter-desc {
+.apiReq-container .apiReq__parameter-list .apiReq__parameter-listItem .parameter-desc {
   padding: 0 8px;
   display: flex;
   align-items: center;
@@ -607,7 +610,7 @@ api-req .apiReq-container .apiReq__parameter-list .apiReq__parameter-listItem .p
   font-optical-sizing: auto;
   font-style: normal;
 }
-api-req .apiReq-container .apiReq__parameter-list .apiReq__parameter-listItem .parameter-desc.th {
+.apiReq-container .apiReq__parameter-list .apiReq__parameter-listItem .parameter-desc.th {
   font-size: 16px;
   line-height: 24px;
   letter-spacing: -0.01em;
@@ -617,7 +620,7 @@ api-req .apiReq-container .apiReq__parameter-list .apiReq__parameter-listItem .p
   padding: 0;
   justify-content: center;
 }
-api-req .apiReq-container .apiReq__parameter-list .apiReq__parameter-listItem .parameter-defaultValue {
+.apiReq-container .apiReq__parameter-list .apiReq__parameter-listItem .parameter-defaultValue {
   padding: 0 8px;
   display: flex;
   align-items: center;
@@ -629,7 +632,7 @@ api-req .apiReq-container .apiReq__parameter-list .apiReq__parameter-listItem .p
   font-style: normal;
   text-align: center;
 }
-api-req .apiReq-container .apiReq__parameter-list .apiReq__parameter-listItem .parameter-defaultValue.th {
+.apiReq-container .apiReq__parameter-list .apiReq__parameter-listItem .parameter-defaultValue.th {
   font-size: 16px;
   line-height: 24px;
   letter-spacing: -0.01em;
@@ -639,20 +642,20 @@ api-req .apiReq-container .apiReq__parameter-list .apiReq__parameter-listItem .p
   padding: 0;
   justify-content: center;
 }
-api-req .apiReq-container .apiReq__parameter-list .apiReq__parameter-listItem .parameter-note {
+.apiReq-container .apiReq__parameter-list .apiReq__parameter-listItem .parameter-note {
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: -0.01em;
+  font-weight: 400;
+  font-optical-sizing: auto;
+  font-style: normal;
   padding: 0 8px;
   display: flex;
   align-items: center;
+  justify-content: center;
   grid-column: span 2;
-  text-align: center;
-  font-size: 14px;
-  line-height: 24px;
-  letter-spacing: -0.01em;
-  font-weight: 400;
-  font-optical-sizing: auto;
-  font-style: normal;
 }
-api-req .apiReq-container .apiReq__parameter-list .apiReq__parameter-listItem .parameter-note.th {
+.apiReq-container .apiReq__parameter-list .apiReq__parameter-listItem .parameter-note.th {
   font-size: 16px;
   line-height: 24px;
   letter-spacing: -0.01em;
