@@ -1,0 +1,11 @@
+@import "../style/constants/_color";
+@import "../style/constants/_typography";
+
+@import "../style/base/_normalize";
+@import "../style/base/_reset";
+@import "../style/base/_fonts";
+
+@import "../style/mixin/text-style";
+@import "../style/mixin/lineClamp";
+
+@import "./components/main.scss";

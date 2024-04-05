@@ -1,0 +1,294 @@
+.contents-container {
+  width: 80%;
+  background-color: #fff;
+
+  padding: 40px;
+
+  .api__title {
+    @include text-style(32, 700, $basic-text);
+  }
+}
+
+.api-container {
+  background-color: $basic-lvOne;
+
+  display: flex;
+  align-items: center;
+  width: fit-content;
+
+  padding: 8px;
+  margin: 24px 0;
+  border-radius: 4px;
+
+  .api__method {
+    @include text-style(14, 400, #fff);
+    padding: 4px 8px;
+    margin-right: 8px;
+    border-radius: 4px;
+
+    &.post {
+      background-color: #1aabff;
+    }
+
+    &.get {
+      background-color: #05b870;
+    }
+  }
+
+  .api__url {
+    @include text-style(14, 400, $basic-text);
+    padding: 0 8px;
+  }
+}
+
+.apiDesc__texts {
+  margin: 16px 0;
+}
+
+api-req {
+  p {
+    display: block;
+  }
+
+  ul,
+  li {
+    padding-left: 0;
+  }
+
+  .apiReq-title {
+    @include text-style(24, 700);
+    margin-bottom: 24px;
+  }
+
+  .apiReq-container {
+    border-top: 1px solid $basic-lvThree;
+    padding-bottom: 32px;
+    // border-bottom: 1px solid $basic-lvThree;
+
+    .apiReq__parameter {
+      display: flex;
+      align-items: flex-end;
+
+      margin: 8px 0;
+      padding: 8px 0;
+
+      &.Body {
+        .apiReq__parameter-name {
+          color: #fff;
+          padding: 8px;
+
+          border-radius: 4px;
+          background-color: rgb(236, 147, 147);
+        }
+      }
+
+      &.Query {
+        .apiReq__parameter-name {
+          color: #fff;
+          padding: 8px;
+
+          border-radius: 4px;
+          background-color: rgb(197, 97, 197);
+        }
+      }
+
+      .apiReq__parameter-name {
+        width: 90px;
+        text-align: center;
+        @include text-style(18, 700);
+      }
+
+      .apiReq__parameter-text {
+        @include text-style(16, 700);
+        margin-left: 8px;
+      }
+    }
+
+    .apiReq__parameter-list {
+      .apiReq__parameter-listItem {
+        border: 1px solid $basic-lvTwo;
+        border-radius: 4px;
+        margin: 4px 0;
+        padding: 8px;
+
+        display: grid;
+        grid-template-columns: repeat(10, 1fr);
+
+        .parameter-name {
+          @include text-style(14, 400);
+          padding: 0 8px;
+          display: flex;
+          align-items: center;
+
+          &.th {
+            @include text-style(16, 700);
+            padding: 0;
+            justify-content: center;
+          }
+        }
+
+        .parameter-type {
+          @include text-style(14, 400);
+          padding: 0 8px;
+          display: flex;
+          align-items: center;
+
+          &.th {
+            @include text-style(16, 700);
+            padding: 0;
+            justify-content: center;
+          }
+        }
+
+        .parameter-desc {
+          padding: 0 8px;
+          display: flex;
+          align-items: center;
+          grid-column: span 5;
+
+          @include text-style(14, 400);
+
+          &.th {
+            @include text-style(16, 700);
+            padding: 0;
+            justify-content: center;
+          }
+        }
+
+        .parameter-defaultValue {
+          padding: 0 8px;
+          display: flex;
+          align-items: center;
+          @include text-style(14, 400);
+          text-align: center;
+
+          &.th {
+            @include text-style(16, 700);
+            padding: 0;
+            justify-content: center;
+          }
+        }
+
+        .parameter-note {
+          padding: 0 8px;
+          display: flex;
+          align-items: center;
+          grid-column: span 2;
+          text-align: center;
+          @include text-style(14, 400);
+
+          &.th {
+            @include text-style(16, 700);
+            padding: 0;
+            justify-content: center;
+          }
+        }
+      }
+    }
+  }
+}
+
+.apiRes-title {
+  @include text-style(24, 700);
+  margin-bottom: 24px;
+}
+
+.apiRes-container {
+  display: flex;
+  gap: 8px;
+  border-bottom: 1px solid $basic-lvThree;
+
+  .table-container {
+    width: 70%;
+    .table-item {
+      display: grid;
+      grid-template-columns: repeat(10, 1fr);
+      border: 1px solid #bcc0cf;
+      border-radius: 4px;
+      margin: 4px 0;
+      padding: 4px 0;
+
+      .table__name {
+        @include text-style(14, 400);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &.th {
+          @include text-style(14, 700);
+        }
+      }
+
+      .table__type {
+        @include text-style(14, 400);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &.th {
+          @include text-style(14, 700);
+        }
+      }
+
+      .table__desc {
+        @include text-style(14, 400);
+        grid-column: span 5;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &.th {
+          @include text-style(14, 700);
+        }
+      }
+
+      .table__default {
+        @include text-style(14, 400);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &.th {
+          @include text-style(14, 700);
+        }
+      }
+
+      .table__note {
+        @include text-style(14, 400);
+        grid-column: span 2;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &.th {
+          @include text-style(14, 700);
+        }
+      }
+    }
+  }
+
+  .json-container {
+    width: 30%;
+
+    border: 1px solid #bcc0cf;
+    border-radius: 4px;
+    margin: 4px 0;
+
+    .json-title {
+      text-align: center;
+      color: #fff;
+      background-color: #bcc0cf;
+      padding: 6px 0;
+      margin-bottom: 2px;
+    }
+
+    pre {
+      background-color: ghostwhite;
+      border: 1px solid silver;
+      padding: 10px 20px;
+      margin: 20px;
+    }
+  }
+}

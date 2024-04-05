@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width"
+    />
+    <title>PointPark Api Docs</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.10/dist/sweetalert2.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.10/dist/sweetalert2.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+  </head>
+  <body>
+    <style>
+      .main-container {
+        display: flex;
+      }
+    </style>
+
+    <main class="main-container">
+      <nav class="nav-container">
+        <!-- API 문서 제목 -->
+        <h1 class="nav__title">타이틀</h1>
+
+        <!-- API 이름 -->
+        <h2 class="nav__apiTitle">ENDPOINTS</h2>
+        <ul class="nav__api-list">
+          <li class="nav__api-listItem">
+            <button
+              class="nav__api-listItemButton"
+              onclick="onClickPage(this.id)"
+              id="api01"
+            >
+              api01
+            </button>
+          </li>
+          <li class="nav__api-listItem">
+            <button
+              class="nav__api-listItemButton"
+              onclick="onClickPage(this.id)"
+              id="api02"
+            >
+              api02
+            </button>
+          </li>
+          <li class="nav__api-listItem">
+            <button
+              class="nav__api-listItemButton"
+              onclick="onClickPage(this.id)"
+              id="api03"
+            >
+              api03
+            </button>
+          </li>
+          <li class="nav__api-listItem">
+            <button
+              class="nav__api-listItemButton"
+              onclick="onClickPage(this.id)"
+              id="pointpark"
+            >
+              PointPark
+            </button>
+          </li>
+
+          <!-- menu 01: ??? -->
+          <li class="nav__api-listItem toggle" id="menu01">
+            <button class="nav__api-listItem-toggleBtn">menu01</button>
+            <ul>
+              <li class="nav__api-listItem">
+                <button
+                  class="nav__api-listItemButton"
+                  onclick="onClickPage(this.id)"
+                  id="menu01_a"
+                >
+                  menu01-api01
+                </button>
+              </li>
+              <li class="nav__api-listItem">
+                <button
+                  class="nav__api-listItemButton"
+                  onclick="onClickPage(this.id)"
+                  id="menu01_b"
+                >
+                  menu01-api02
+                </button>
+              </li>
+              <li class="nav__api-listItem">
+                <button
+                  class="nav__api-listItemButton"
+                  onclick="onClickPage(this.id)"
+                  id="menu01_c"
+                >
+                  menu01-api03
+                </button>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="contents-container"></div>
+    </main>
+
+    <script src="./main.js"></script>
+
+    <!-- api 전체 -->
+    <script type="module" src="./components/apiUrl/index.js"></script>
+
+    <!-- api Requset -->
+    <script type="module" src="./components/apiReq/index.js"></script>
+  </body>
+</html>

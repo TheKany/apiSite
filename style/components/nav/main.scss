@@ -1,0 +1,61 @@
+.nav-container {
+  ul,
+  li {
+    padding-left: 0;
+  }
+
+  background-color: $basic-lvOne;
+
+  width: 20%;
+  height: 100vh;
+
+  .nav__title {
+    @include text-style(16, 700);
+    padding: 32px 16px;
+  }
+
+  .nav__apiTitle {
+    @include text-style(14, 500);
+    padding: 24px 16px;
+  }
+
+  .nav__api-list {
+    button {
+      padding: 8px 16px;
+    }
+
+    .nav__api-listItem {
+      @include text-style(12, 400);
+      margin: 8px 0;
+      width: 100%;
+      height: 40px;
+      transition: height 0.5s ease;
+
+      overflow: hidden;
+
+      ul {
+        padding-left: 16px;
+      }
+
+      .nav__api-listItem-toggleBtn {
+        width: 100%;
+        text-align: start;
+        padding: 8px 16px;
+        margin-bottom: 8px;
+        border-bottom: 1px solid $basic-emText;
+      }
+
+      .nav__api-listItemButton {
+        width: 100%;
+        text-align: start;
+        padding: 8px 16px;
+      }
+
+      &.toggle {
+        &.clicked {
+          height: 200px;
+        }
+      }
+    }
+  }
+}
